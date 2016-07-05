@@ -1,0 +1,11 @@
+config.yml
+
+target/
+src/main/resources/node_modules
+.idea/
+
+*.class
+*.jar
+*.iml
+
+notes.txt

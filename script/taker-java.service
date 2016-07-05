@@ -1,0 +1,11 @@
+[Unit]
+Description=Taker java server
+
+[Service]
+WorkingDirectory=/home/taker/app/
+Type=forking
+ExecStart=/bin/bash script/taker-java.sh start
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

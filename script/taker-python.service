@@ -1,0 +1,11 @@
+[Unit]
+Description=Taker python server
+
+[Service]
+WorkingDirectory=/home/taker/app/
+Type=forking
+ExecStart=/bin/bash script/taker-python.sh start
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
